@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "欢迎来到星火",
+  "usingComponents": {
+    "arc-tab-bar": "../../components/ArcTabBar"
+  }
+}

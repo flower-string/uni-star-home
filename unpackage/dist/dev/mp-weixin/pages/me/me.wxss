@@ -1,0 +1,14 @@
+
+image.data-v-19c123a7 {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+}
+.container.data-v-19c123a7 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 1;
+		font-size: 20px;
+}

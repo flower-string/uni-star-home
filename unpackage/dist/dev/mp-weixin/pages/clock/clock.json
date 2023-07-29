@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "打卡",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "arc-tab-bar": "../../components/ArcTabBar"
+  }
+}

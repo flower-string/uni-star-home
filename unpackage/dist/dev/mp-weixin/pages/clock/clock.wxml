@@ -1,0 +1,1 @@
+<view class="sche"><canvas canvas-id="Schedule" id="Schedule"></canvas></view><view class="zhan"></view><arc-tab-bar wx:if="{{a}}" u-i="252f4212-0" bind:__l="__l" u-p="{{a}}"></arc-tab-bar>

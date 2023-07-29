@@ -1,0 +1,1 @@
+<view class="container data-v-3710fc71"><app-card wx:for="{{a}}" wx:for-item="item" class="data-v-3710fc71" u-i="{{item.a}}" bind:__l="__l" u-p="{{item.b}}"></app-card><view class="zhan data-v-3710fc71"></view></view><arc-tab-bar wx:if="{{b}}" class="data-v-3710fc71" u-i="3710fc71-1" bind:__l="__l" u-p="{{b}}"></arc-tab-bar>

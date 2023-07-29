@@ -1,0 +1,58 @@
+
+.card.data-v-71d73f3c {
+		display: flex;
+		width: 90vw;
+		height: 14vh;
+		border-radius: 3vh;
+		overflow: hidden;
+		margin-bottom: 1vh;
+}
+.image.data-v-71d73f3c {
+		display: block;
+		flex: 2;
+		height: 100%;
+		overflow: hidden;
+}
+image.data-v-71d73f3c {
+		height: 120%;
+		width: 120%;
+}
+.content.data-v-71d73f3c {
+		flex: 9;
+		background-color: #efefef;
+		padding: 5px;
+		padding-left: 10px;
+		padding-bottom: 0;
+}
+.appname.data-v-71d73f3c {
+		color: #536e7f;
+		font-size: 18px;
+		margin-bottom: 3px;
+}
+.username.data-v-71d73f3c {
+		color: #c1cdd5;
+		font-size: 12px;
+}
+.btn.data-v-71d73f3c {
+		margin-right: 0;
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 2vh;
+}
+	
+	/* .show {
+		color: white;
+		border-radius: 50%;
+		width: 3.2vh;
+		height: 3.2vh;
+	} */
+.fork.data-v-71d73f3c {
+		background-color: #14a2e0;
+		width: 20vw;
+		font-size: 3vw;
+		height: 4vh;
+		text-align: center;
+		line-height: 4vh;
+		margin-right: 10px;
+		border-radius: 2vh;
+}

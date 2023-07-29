@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "工具箱",
+  "usingComponents": {
+    "arc-tab-bar": "../../components/ArcTabBar",
+    "app-card": "../../components/AppCard"
+  }
+}

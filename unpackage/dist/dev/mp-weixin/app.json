@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/tools/tools",
+    "pages/clock/clock",
+    "pages/me/me"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#64b4f5",
+    "backgroundColor": "#64b4f5"
+  },
+  "tabBar": {
+    "selectedColor": "#55ffff",
+    "color": "#fdfefe",
+    "backgroundColor": "#111111",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home_active.png"
+      },
+      {
+        "pagePath": "pages/tools/tools",
+        "text": "工具箱",
+        "iconPath": "static/tab/tool.png",
+        "selectedIconPath": "static/tab/tool_active.png"
+      },
+      {
+        "pagePath": "pages/clock/clock",
+        "text": "排班",
+        "iconPath": "static/tab/clock.png",
+        "selectedIconPath": "static/tab/clock_active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "static/tab/me.png",
+        "selectedIconPath": "static/tab/me_active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要检测位置信息提交打卡"
+    }
+  },
+  "usingComponents": {}
+}
