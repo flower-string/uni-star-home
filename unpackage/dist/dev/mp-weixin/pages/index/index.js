@@ -1,6 +1,6 @@
 "use strict";
-const common_vendor = require("../../common/vendor.js");
 const api_common = require("../../api/common.js");
+const common_vendor = require("../../common/vendor.js");
 const ArcTabBar = () => "../../components/ArcTabBar.js";
 const _sfc_main = {
   name: "index",
@@ -16,12 +16,11 @@ const _sfc_main = {
     ArcTabBar
   },
   methods: {
-    async getSisterImg() {
-      const data = await common_vendor.index.request({
-        url: "https://api.qqsuu.cn/api/dm-littlesister?type=json"
-      });
-      console.log(data.data.img);
-      this.sisterImgUrl = data.data.img;
+    async renderSoul() {
+      this.soul = await api_common.getSoupForSoul();
+    },
+    async renderNetease() {
+      this.netease = await api_common.getNeteaseComment();
     }
   },
   async mounted() {
@@ -44,8 +43,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     a: $data.sisterImgUrl,
     b: common_vendor.t($data.title),
     c: common_vendor.t($data.netease),
-    d: common_vendor.t($data.soul),
-    e: common_vendor.p({
+    d: common_vendor.o((...args) => $options.renderNetease && $options.renderNetease(...args)),
+    e: common_vendor.o((...args) => $options.renderSoul && $options.renderSoul(...args)),
+    f: common_vendor.t($data.soul),
+    g: common_vendor.p({
       current: 0
     })
   };

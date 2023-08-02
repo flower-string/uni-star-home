@@ -7,19 +7,24 @@
 			{{ title }}
 		</view>
 		<view class="other">
-			{{ state }}
+			<slot></slot>
 		</view>
 	</view>
 </template>
 
 <script>
 	export default {
+		props: {
+			title: String,
+			icon: String,
+		},
 		data() {
 			return {
-				title: '声音',
-				icon: '1',
-				state: 'close'
 			}
+		},
+		methods: {
+		},
+		mounted() {
 		}
 	}
 </script>
@@ -43,6 +48,8 @@
 	
 	.title {
 		flex: 1;
+		display: flex;
+		font-size: 40rpx;
 		color: #4e6b7c;
 	}
 	

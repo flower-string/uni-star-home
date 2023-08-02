@@ -21,7 +21,7 @@
 		{
 			"path": "pages/clock/clock",
 			"style": {
-				"navigationBarTitleText": "打卡",
+				"navigationBarTitleText": "排班",
 				"enablePullDownRefresh": false
 			}
 		},
@@ -30,6 +30,18 @@
 			"style": {
 				"navigationBarTitleText": "个人中心",
 				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/setting/setting",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/dress/dress",
+			"style": {
+				"navigationBarTitleText": "装扮空间"
 			}
 		}
 	],

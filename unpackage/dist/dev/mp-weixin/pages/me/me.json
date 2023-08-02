@@ -2,7 +2,6 @@
   "navigationBarTitleText": "个人中心",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "arc-tab-bar": "../../components/ArcTabBar",
-    "setting-option": "../../components/SettingOption"
+    "arc-tab-bar": "../../components/ArcTabBar"
   }
 }

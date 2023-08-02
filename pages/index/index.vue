@@ -7,20 +7,17 @@
 			</view>
 		</view>
 
-		<view class="netease">
+		<view class="netease" @click="renderNetease">
 			<view class="bar">
 				网易云热评
 			</view>
 			<view class="content">
 				{{ netease }}
 			</view>
-
 		</view>
 		<br>
-		<hr>
-
 		<view class="soul">
-			<view class="bar">
+			<view class="bar" @click="renderSoul">
 				心灵鸡汤
 			</view>
 			<view class="content">
@@ -42,6 +39,7 @@
 		getNeteaseComment,
 		getSoupForSoul
 	} from '../../api/common.js'
+import { onMounted } from '@vue/composition-api';
 
 	export default {
 		name: 'index',
@@ -58,17 +56,15 @@
 			ArcTabBar
 		},
 		methods: {
-			async getSisterImg() {
-				const data = await uni.request({
-					url: 'https://api.qqsuu.cn/api/dm-littlesister?type=json'
-				});
-				console.log(data.data.img);
-				// this.name = data.data.data.list[0].naming;
-				this.sisterImgUrl = data.data.img;
+			async renderSoul() {
+				this.soul = await getSoupForSoul();
 			},
+			
+			async renderNetease() {
+				this.netease = await getNeteaseComment();
+			}
 		},
 		async mounted() {
-
 			const {
 				url,
 				title
@@ -95,7 +91,7 @@
 	}
 
 	.title {
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	image {

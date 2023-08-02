@@ -45,18 +45,35 @@
 					}
 				}
 
+				const scaleX = 50;
+				const scaleY = 90;
 				for (let i = 0; i < 6; i++) {
-					for (let j = 0; j < 5; j++) {
-						new Clock(new Vector2(i * 50, j * 100),
-							getRandomColor(),
-							"" + i + "" +  j);
+					for (let j = 0; j < 6; j++) {
+						if(j == 0 && i == 0) {
+							continue;
+						}
+						if(j == 0) {
+							new Clock(new Vector2(i * scaleX, j * scaleY),
+								'#87b7ef',
+								"周" + i);
+							continue;
+						}
+						if(i == 0) {
+							new Clock(new Vector2(i * scaleX, j * scaleY),
+								'#87b7ef',
+								"" + (j*2-1) + "" + (j*2) + "节");
+							continue;
+						}
+						new Clock(new Vector2(i * scaleX, j * scaleY),
+							'#87b7ef',
+							i + '' + j);
 					}
 				}
 				
 				ctx.draw();
 			}
 		},
-		onReady() {
+		onShow() {
 			this.renderCanves();
 		}
 	}
@@ -70,7 +87,8 @@
 	canvas {
 		border: 1px solid white;
 		width: 300px;
-		height: 500px;
+		height: 540px;
 		margin: auto;
+		z-index: -1;
 	}
 </style>

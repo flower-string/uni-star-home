@@ -7,6 +7,8 @@ if (!Math) {
   "./pages/tools/tools.js";
   "./pages/clock/clock.js";
   "./pages/me/me.js";
+  "./pages/setting/setting.js";
+  "./pages/dress/dress.js";
 }
 const _sfc_main = {
   onLaunch: function() {

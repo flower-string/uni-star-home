@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "打卡",
+  "navigationBarTitleText": "排班",
   "enablePullDownRefresh": false,
   "usingComponents": {
     "arc-tab-bar": "../../components/ArcTabBar"

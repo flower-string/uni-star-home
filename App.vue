@@ -44,4 +44,6 @@
 		width: 100%;
 		height: 15vh;
 	}
+	
+	.uni-app--showleftwindow +.uni-tabbar-bottom { display: none; }
 </style>

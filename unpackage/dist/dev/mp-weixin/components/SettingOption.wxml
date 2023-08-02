@@ -1,1 +1,1 @@
-<view class="card data-v-b6bb96d3"><view class="icon data-v-b6bb96d3">{{a}}</view><view class="title data-v-b6bb96d3">{{b}}</view><view class="other data-v-b6bb96d3">{{c}}</view></view>
+<view class="card data-v-b6bb96d3"><view class="icon data-v-b6bb96d3">{{a}}</view><view class="title data-v-b6bb96d3">{{b}}</view><view class="other data-v-b6bb96d3"><slot></slot></view></view>

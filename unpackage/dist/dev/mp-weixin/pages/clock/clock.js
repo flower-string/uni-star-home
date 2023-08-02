@@ -1,6 +1,5 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
-const api_common = require("../../api/common.js");
 const utils_Vector2 = require("../../utils/Vector2.js");
 const ArcTabBar = () => "../../components/ArcTabBar.js";
 const _sfc_main = {
@@ -26,23 +25,44 @@ const _sfc_main = {
           ctx.fill();
           ctx.stroke();
           ctx.closePath();
-          ctx.setFillStyle("#999999");
+          ctx.setFillStyle("#111111");
           ctx.fillText(text, vector2.x + 10, vector2.y + 50);
         }
       }
+      const scaleX = 50;
+      const scaleY = 90;
       for (let i = 0; i < 6; i++) {
-        for (let j = 0; j < 5; j++) {
+        for (let j = 0; j < 6; j++) {
+          if (j == 0 && i == 0) {
+            continue;
+          }
+          if (j == 0) {
+            new Clock(
+              new utils_Vector2.Vector2(i * scaleX, j * scaleY),
+              "#87b7ef",
+              "周" + i
+            );
+            continue;
+          }
+          if (i == 0) {
+            new Clock(
+              new utils_Vector2.Vector2(i * scaleX, j * scaleY),
+              "#87b7ef",
+              "" + (j * 2 - 1) + j * 2 + "节"
+            );
+            continue;
+          }
           new Clock(
-            new utils_Vector2.Vector2(i * 50, j * 100),
-            api_common.getRandomColor(),
-            "" + i + j
+            new utils_Vector2.Vector2(i * scaleX, j * scaleY),
+            "#87b7ef",
+            i + "" + j
           );
         }
       }
       ctx.draw();
     }
   },
-  onReady() {
+  onShow() {
     this.renderCanves();
   }
 };

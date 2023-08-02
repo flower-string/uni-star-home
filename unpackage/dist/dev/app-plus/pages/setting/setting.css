@@ -1,0 +1,115 @@
+
+.tabbar[data-v-e83bd8e6] {
+	      position: fixed;
+	      left: 0;
+	      right: 0;
+	      bottom: 0;
+	      height: 10vh;
+	      width: 100vw;
+}
+.bgbox[data-v-e83bd8e6] {
+	      position: absolute;
+	      display: flex;
+	      justify-content: center;
+	      width: 120vw;
+	      height: 20vh;
+	      border-radius: 50%;
+	      left: -10vw;
+	      bottom: -10vh;
+	      overflow: hidden;
+}
+.ul[data-v-e83bd8e6] {
+	      display: flex;
+	      width: 100vw;
+}
+.bg .li[data-v-e83bd8e6] {
+	      background-color: #bce6ef;
+	      border: 1px solid #ffffff;
+}
+.container .li[data-v-e83bd8e6] {
+	      --bg-c: #111111;
+	      --margin: 0
+	      color: var(--text-color);
+}
+.li[data-v-e83bd8e6] {
+	      list-style: none;
+	      flex: 1;
+	      text-align: center;
+	      height: 100%;
+	      transition: .3s ease-in;
+	      position: relative;
+}
+.container .li .ava[data-v-e83bd8e6] {
+	      position: absolute;
+	      left: 50%;
+	      top: 50%;
+	      display: block;
+	      border-radius: 50%;
+	      width: 50px;
+	      height: 50px;
+	      background-color: var(--bg-c);
+	      transform: translate(-50%,-50%);
+	      z-index: 10;
+	      margin-top: var(--margin);
+	      display: flex;
+	      justify-content: center;
+	      align-items: center;
+	      border: 3px solid #c9ecf8;
+}
+.container[data-v-e83bd8e6] {
+	      position: absolute;
+	      width: 100%;
+	      height: 100%;
+	      z-index: 2;
+	      font-size: 10px;
+	      bottom: 0;
+	      line-height: 10vh;
+}
+.bg .li.active[data-v-e83bd8e6] {
+	      background-color: var(--c);
+}
+.container .li.active[data-v-e83bd8e6] {
+	      color: #111111;
+}
+
+
+.card[data-v-b6bb96d3] {
+		background-color: #efefef;
+		margin: 5px 5px;
+		display: flex;
+		height: 50px;
+		align-items: center;
+		border-radius: 15px;
+}
+.icon[data-v-b6bb96d3] {
+		background-color: red;
+		width: 35px;
+		height: 35px;
+		margin: 12.5px 12.5px 12.5px 12.5px;
+}
+.title[data-v-b6bb96d3] {
+		flex: 1;
+		display: flex;
+		font-size: 1.25rem;
+		color: #4e6b7c;
+}
+.other[data-v-b6bb96d3] {
+		text-align: right;
+		margin-right: 20px;
+		color: #94b3c6;
+}
+
+
+uni-image[data-v-018cdf56] {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+}
+.container[data-v-018cdf56] {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 1;
+		font-size: 20px;
+}

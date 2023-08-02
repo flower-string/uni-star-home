@@ -21,11 +21,6 @@ async function getSoupForSoul() {
   });
   return data.data.data.content;
 }
-function getRandomColor() {
-  const colors = ["#4886ec", "#ff6191", "#8568e6", "#f89c51", "#38be69"];
-  return colors[Math.floor(Math.random() * colors.length)];
-}
 exports.getImageByBing = getImageByBing;
 exports.getNeteaseComment = getNeteaseComment;
-exports.getRandomColor = getRandomColor;
 exports.getSoupForSoul = getSoupForSoul;

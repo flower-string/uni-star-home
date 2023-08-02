@@ -4,7 +4,9 @@
     "pages/login/login",
     "pages/tools/tools",
     "pages/clock/clock",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/setting/setting",
+    "pages/dress/dress"
   ],
   "window": {
     "navigationBarTextStyle": "white",
